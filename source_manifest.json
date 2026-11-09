@@ -1,0 +1,524 @@
+{
+  "dataset": {
+    "record_url": "https://zenodo.org/records/15814468",
+    "download_url": "https://zenodo.org/api/records/15814468/files/Dataset_Aalborg.zip/content",
+    "doi": "10.5281/zenodo.15814468",
+    "concept_doi": "10.5281/zenodo.15814467",
+    "archive_bytes": 390936036,
+    "archive_md5": "18f16d53a10f1b89d1dbcbfc5c89bc3d",
+    "archive_sha256": "aa5233788b490d323c2e679bf56c38492863ae42f0089a28bb66e3c3ddb6643d",
+    "license": "CC-BY-4.0",
+    "ownership": "External Aalborg cohort, not Solomon/Keller-acquired data"
+  },
+  "publication": {
+    "title": "Extracting reproducible components from electroencephalographic responses to transcranial magnetic stimulation with group task-related component analysis",
+    "doi": "10.1162/IMAG.a.1085",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12784221/",
+    "relationship": "Public processed input reused; this analysis does not reproduce gTRCA or independently validate its published claims"
+  },
+  "analysis": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "mne": "1.8.0",
+    "seed": 20261109,
+    "iterations": 100,
+    "channels": [
+      "C3",
+      "Cz",
+      "Pz"
+    ],
+    "windows": {
+      "early": {
+        "label": "Early response",
+        "start_ms": 20,
+        "end_ms": 60
+      },
+      "late": {
+        "label": "Later response",
+        "start_ms": 80,
+        "end_ms": 180
+      }
+    },
+    "budgets_per_disjoint_group": [
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "correlation": "Pearson correlation of two demeaned within-window mean waveforms",
+    "amplitude": "200 * abs(RMS_A-RMS_B)/(RMS_A+RMS_B); RMS uses un-demeaned within-window response",
+    "quantiles": "NumPy linear quantiles",
+    "rounding": "Curves rounded to 1e-6 microvolts, metrics unrounded",
+    "input_preprocessing": "None beyond selecting fixed channels/windows and converting V to microvolts",
+    "biological_unit": "participant; resampled splits and channels are not independent participants"
+  },
+  "files": [
+    {
+      "file": "S01_epo.fif",
+      "sha256": "14b138f75749b6b1fcb5c4250b8ea0fd480b2ed78e365fe41fda5c6687c19a85",
+      "n_retained_epochs": 169,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S02_epo.fif",
+      "sha256": "ebb1d4408a3567e5704afc0dc460092cf6e47e07df5c2fd683c855b41957404c",
+      "n_retained_epochs": 171,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S03_epo.fif",
+      "sha256": "f091ae4f0876129d92153eb398c7f1906222b27e8e3f80dfa40e9c6937bc4a5f",
+      "n_retained_epochs": 110,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S04_epo.fif",
+      "sha256": "70faab904f7bd951d0a12c378299ca052d7755882c4166800866598377fc1f78",
+      "n_retained_epochs": 156,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S05_epo.fif",
+      "sha256": "6e65f8cad5ec39409b9d2a3187aa0cbe8729abc71e1487ebe47f3f3da04f948c",
+      "n_retained_epochs": 159,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S06_epo.fif",
+      "sha256": "b22975c162b7d76a7733b5492f5df40212ad50f5e6b6b9eef18858b0669ccd3e",
+      "n_retained_epochs": 156,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S07_epo.fif",
+      "sha256": "981d1b92073b56c4a5dcd6c030f2894e026d14216dd346ba10656c1d376ca58d",
+      "n_retained_epochs": 133,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S08_epo.fif",
+      "sha256": "f691c385affa51ad3aca42f8877b2da4d809f2deca3f2c1ea1d31a0d77fa2f6b",
+      "n_retained_epochs": 150,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S09_epo.fif",
+      "sha256": "8a8026b994113c9e6ab58fbf8b473dc572d5dcbc598bb0e2b37fc0159376fe44",
+      "n_retained_epochs": 150,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S10_epo.fif",
+      "sha256": "0acd1ac064fc5d02af52bbc42c3517cf9f826fd9854cf985eb66670957ee41ef",
+      "n_retained_epochs": 181,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S11_epo.fif",
+      "sha256": "13d0b7aab8fd255ce26feaac68bfeafc1adbba0be560eea25862dbfb255cd063",
+      "n_retained_epochs": 177,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S12_epo.fif",
+      "sha256": "1c8921da1611d28055df78fd5c7fb91846a641b47f08c94403166627d77ffa5b",
+      "n_retained_epochs": 145,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S13_epo.fif",
+      "sha256": "572f2fc2806634faa6e5ac543e8839aa2481269795f15154811492eb28bffa0f",
+      "n_retained_epochs": 147,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S14_epo.fif",
+      "sha256": "dc6aa459c7c2ab5fce20ecba38fe0d82e560143b8f70746683b473d351b2a44c",
+      "n_retained_epochs": 165,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S15_epo.fif",
+      "sha256": "82187c6a4ae574a6390415a5ac84f6812202f8613d54043dadc94d12ddf09505",
+      "n_retained_epochs": 160,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S16_epo.fif",
+      "sha256": "6647d00a3b09eba4411d203f22a47cc4d5bd972104647f1c4ab68b6e8d7b35cf",
+      "n_retained_epochs": 164,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S17_epo.fif",
+      "sha256": "4d4e038206f5368b9e4ed1b182fd8be82e24a03a88658130f059a65eb31dd97b",
+      "n_retained_epochs": 150,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S18_epo.fif",
+      "sha256": "62682516a8688904f8ddf23950621aead6ac59b00ab940ba3871f2526ca14e34",
+      "n_retained_epochs": 157,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S19_epo.fif",
+      "sha256": "9b951bbc274145265755dc9d02515263089b1bff217483d0052ed1b8655a7c64",
+      "n_retained_epochs": 171,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S20_epo.fif",
+      "sha256": "e8640ab59e58fda32dd2780856bcf73a4df07ecac10f0e7a6917e45c2efc8d4d",
+      "n_retained_epochs": 166,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S21_epo.fif",
+      "sha256": "d41f46c443a7534dcb815620b9b1d0b6e01553e9ec62d22bc2e0ef801a7ea0a2",
+      "n_retained_epochs": 170,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    },
+    {
+      "file": "S22_epo.fif",
+      "sha256": "7b510965379244aa544fef90343040b43a1977b90bf66093862743862ead6bcc",
+      "n_retained_epochs": 180,
+      "n_channels": 63,
+      "n_times": 480,
+      "sampling_hz": 400,
+      "amplitude_unit": "V (FIFF107), multiplied by 1e6 for microvolts",
+      "meas_date": null,
+      "metadata": null,
+      "event_id": {
+        "1": 1
+      },
+      "event_onsets_are_artificial_ordinal_indices": true,
+      "header_filter_hz": [
+        0.0,
+        200.0
+      ],
+      "baseline_metadata": null,
+      "projection_count": 0
+    }
+  ],
+  "output_hashes": {
+    "analysis.json": "4c4137a637550ecfd26c784a546aa15b97c6af55467f6ae01ec6a63b5e1abbe8",
+    "results.csv": "db10e4216eb1646fc7e30a4240ab58346e5cda77b42af8a6b9da4a94de983001"
+  }
+}

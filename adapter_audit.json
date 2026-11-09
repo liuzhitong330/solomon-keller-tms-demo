@@ -1,0 +1,1553 @@
+{
+  "report_audit": {
+    "key": "Aalborg-S01-C3-all-preprocessed-epochs",
+    "upstream_repository": "https://github.com/PrecisionNeuroLab/NaviNIBS",
+    "upstream_commit": "094f86d9204204f4a5ec125d4ab3fa995047845e",
+    "upstream_license": "LGPL-3.0-only",
+    "functions_executed": [
+      "NaviNIBS.util.numpy.attrsWithNumpyFromDict",
+      "NaviNIBS.util.numpy.attrsWithNumpyAsDict"
+    ],
+    "time_points": 480,
+    "trials": 169,
+    "array_roundtrip_equal": {
+      "time_ms": true,
+      "evoked_uv": true,
+      "trial_rms_uv": true
+    },
+    "metadata_roundtrip_equal": true,
+    "serialized_sha256": "4cfcaa3b3165cb7d68263b58506b4a2a243c76e30a684b402895abcd2a733649",
+    "scope": "Numpy-backed response report serialization only; not a NaviNIBS session or clinical validation."
+  },
+  "sample_summary": {
+    "total": 169,
+    "blocked": 169,
+    "required_fields_present": 0,
+    "full_samples_created": 0,
+    "session_created": false,
+    "meaning": "Serialization interoperability only; missing acquisition clocks prevent a truthful full Sample export."
+  },
+  "sample_preflight": [
+    {
+      "key": "S01-epoch-001",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-002",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-003",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-004",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-005",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-006",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-007",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-008",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-009",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-010",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-011",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-012",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-013",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-014",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-015",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-016",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-017",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-018",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-019",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-020",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-021",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-022",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-023",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-024",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-025",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-026",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-027",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-028",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-029",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-030",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-031",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-032",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-033",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-034",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-035",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-036",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-037",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-038",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-039",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-040",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-041",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-042",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-043",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-044",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-045",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-046",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-047",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-048",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-049",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-050",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-051",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-052",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-053",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-054",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-055",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-056",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-057",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-058",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-059",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-060",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-061",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-062",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-063",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-064",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-065",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-066",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-067",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-068",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-069",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-070",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-071",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-072",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-073",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-074",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-075",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-076",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-077",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-078",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-079",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-080",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-081",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-082",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-083",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-084",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-085",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-086",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-087",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-088",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-089",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-090",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-091",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-092",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-093",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-094",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-095",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-096",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-097",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-098",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-099",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-100",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-101",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-102",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-103",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-104",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-105",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-106",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-107",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-108",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-109",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-110",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-111",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-112",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-113",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-114",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-115",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-116",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-117",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-118",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-119",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-120",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-121",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-122",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-123",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-124",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-125",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-126",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-127",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-128",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-129",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-130",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-131",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-132",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-133",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-134",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-135",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-136",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-137",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-138",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-139",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-140",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-141",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-142",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-143",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-144",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-145",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-146",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-147",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-148",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-149",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-150",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-151",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-152",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-153",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-154",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-155",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-156",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-157",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-158",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-159",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-160",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-161",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-162",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-163",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-164",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-165",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-166",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-167",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-168",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    },
+    {
+      "key": "S01-epoch-169",
+      "status": "BLOCKED",
+      "issues": [
+        "MISSING_ACQUISITION_TIMESTAMP"
+      ],
+      "recorded_coil_transform_available": false,
+      "note": "No timestamp or coil geometry is generated. Passing this check is not validation for live hardware or a full neuronavigation session."
+    }
+  ]
+}

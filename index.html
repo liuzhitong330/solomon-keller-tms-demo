@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A reproducible, participant-level reanalysis of public TMS-EEG recordings: how repeatable is an estimated response when different pulses contribute to it?">
+  <title>Exploratory Analyses Inspired by the Solomon / Keller Labs</title>
+  <link rel="stylesheet" href="styles.css?v=20261109">
+</head>
+<body>
+  <main class="page">
+    <h1>Exploratory Analyses Inspired by the Solomon / Keller Labs</h1>
+    <div class="byline">
+      Cathy Liu · Computational neuroscience · <a href="mailto:cathyliu014@gmail.com">cathyliu014@gmail.com</a><br>
+      Prepared for the Solomon / Keller Labs, Stanford University<br>
+      Personal exploratory project, November 2026
+    </div>
+
+    <nav class="section-nav" aria-label="Demo sections">
+      <a href="#motivation">Motivation</a>
+      <a href="#a1">Response explorer</a>
+      <a href="#a2">Trial sensitivity</a>
+      <a href="#relevance">Relevance</a>
+    </nav>
+
+    <p>The Solomon and Keller labs study how stimulation changes human brain circuits, with the aim of making neuromodulation more precise and personal. Before interpreting a person's evoked response, one practical question is worth asking: would different groups of pulses give us the same answer?</p>
+    <p>I built a small, reproducible response-review tool using an external public TMS-EEG dataset. It compares disjoint groups of trials, separates waveform shape from amplitude, and identifies estimates that remain sensitive to the number of pulses included.</p>
+
+    <hr id="motivation">
+    <section aria-labelledby="how-heading">
+      <h2 id="how-heading">How it works</h2>
+      <p>For each of 22 participants, two non-overlapping sets of retained trials form two average responses. The analysis repeats this 100 times at five trial budgets. Agreement is assessed at three electrodes and two fixed latency windows. These are already processed recordings from the Aalborg cohort of <a href="https://doi.org/10.1162/IMAG.a.1085">Couto et al.</a>, not data collected by the Solomon or Keller labs.</p>
+    </section>
+
+    <hr id="a1">
+    <section aria-labelledby="analysis-one-heading">
+      <h2 id="analysis-one-heading">Analysis 1 — Would another set of pulses agree?</h2>
+      <div class="experiment">
+        <div class="exp-label">Disjoint trial sets</div>
+        <div class="exp-title">The same person, electrode and latency window</div>
+        <p>Choose a readout. The two solid lines show the first seeded split, not the best-looking split. The dashed full-trial average is context only; it is never used as the agreement reference.</p>
+      </div>
+
+      <div class="panel">
+        <div class="controls" id="response-controls">
+          <label>Participant<select id="participant-select" disabled><option>Loading…</option></select></label>
+          <label>Electrode<select id="channel-select" disabled><option>C3</option></select></label>
+          <label>Latency window<select id="window-select" disabled><option value="early">20–60 ms</option></select></label>
+          <label>Trials in each set<select id="budget-select" disabled><option value="50">50 + 50</option></select></label>
+        </div>
+        <p class="control-note" id="trial-budget-note">The two sets never share a trial within a comparison.</p>
+        <div class="chart-legend"><span><i class="swatch set-a"></i>Set A</span><span><i class="swatch set-b"></i>Set B</span><span><i class="swatch full-mean"></i>All retained trials</span></div>
+        <svg id="hero-viz" class="viz" viewBox="0 0 600 310" role="img" aria-label="Average TMS-evoked waveforms for two disjoint trial sets"></svg>
+        <div class="readout" id="readout" aria-live="polite">Loading the checked analysis…</div>
+        <figcaption id="waveform-caption">Voltage in microvolts; latency after the pulse in milliseconds. Source: <a href="https://zenodo.org/records/15814468">Aalborg processed epochs, Zenodo 15814468</a> (CC BY 4.0).</figcaption>
+      </div>
+
+      <div class="metric-row">
+        <div class="metric"><span class="metric-val" id="metric-one">—</span><span class="metric-desc">median shape agreement, r</span></div>
+        <div class="metric"><span class="metric-val" id="metric-two">—</span><span class="metric-desc">median RMS discrepancy</span></div>
+        <div class="metric"><span class="metric-val" id="metric-three">—</span><span class="metric-desc">retained trials in this recording</span></div>
+      </div>
+      <p class="detail-note" id="variability-note"></p>
+      <p class="value-note"><strong>What this lets the lab do:</strong> distinguish a consistent response shape from a consistent response magnitude, and choose a readout for closer inspection before interpreting a stimulation effect.</p>
+      <p class="value-note"><strong>Where Cathy adds value:</strong> connect computational analysis and experimental reasoning in a transparent review workflow: explicit trial membership, separate measurements and reproducible decisions. The implementation is AI-assisted; it is not evidence of independent TMS acquisition or hardware integration.</p>
+    </section>
+
+    <hr id="a2">
+    <section aria-labelledby="analysis-two-heading">
+      <h2 id="analysis-two-heading">Analysis 2 — Does adding trials change the decision?</h2>
+      <div class="experiment">
+        <div class="exp-label">Sensitivity, not an acceptance test</div>
+        <div class="exp-title">Follow the lower tail of agreement as the trial budget grows</div>
+        <p>The teal line is the selected participant's 10th-percentile correlation across the 100 splits. Gray shows the median of that statistic across participants. These are descriptive summaries, not confidence intervals.</p>
+      </div>
+      <svg id="budget-viz" class="viz" viewBox="0 0 600 290" role="group" aria-label="Lower-decile waveform agreement across five selectable trial budgets"></svg>
+      <p class="detail-note" id="budget-note"></p>
+
+      <div class="review-controls">
+        <label>Minimum lower-decile r <input id="correlation-threshold" type="number" min="-1" max="1" step="0.05" value="0.8" inputmode="decimal"></label>
+        <label>Maximum median RMS discrepancy (%) <input id="rms-threshold" type="number" min="0" max="200" step="5" value="20" inputmode="decimal"></label>
+        <button id="reset-thresholds" type="button">Reset illustrative rule</button>
+      </div>
+      <p class="detail-note" id="threshold-status" role="status"></p>
+      <p class="detail-note">The default rule (lower-decile r ≥ 0.8 and median RMS discrepancy ≤ 20%) is an illustrative review aid, not a validated QC cutoff. Changing it changes the review list below, not the underlying analysis.</p>
+      <p class="cohort-readout" id="cohort-readout" aria-live="polite"></p>
+      <div class="table-tools">
+        <label><input id="review-only" type="checkbox" checked> Show estimates needing review</label>
+        <button id="export-csv" type="button" disabled>Export this review table (CSV)</button>
+      </div>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Participant review table; scroll horizontally on narrow screens">
+        <table id="cohort-table">
+          <caption id="cohort-caption">Participant-level review at the selected electrode, window and trial budget</caption>
+          <thead><tr><th scope="col">Participant</th><th scope="col">r, lower decile</th><th scope="col">RMS difference</th><th scope="col">Review reason</th></tr></thead>
+          <tbody id="cohort-body"></tbody>
+        </table>
+      </div>
+      <p class="value-note"><strong>What this lets the lab do:</strong> export a reproducible, participant-level review list and see whether a larger within-session trial budget resolves the concern. Meeting a rule does not prove a response is purely neural, stable across sessions or suitable for treatment.</p>
+    </section>
+
+    <hr id="relevance">
+    <section aria-labelledby="relevance-heading">
+      <h2 id="relevance-heading">Why this matters for the lab</h2>
+      <p>Personalized stimulation needs measurements that are interpretable at the individual level. This analysis asks a narrower prerequisite question: how much does the response estimate depend on which trials were averaged? It is an inferred research-software opportunity aligned with the labs' <a href="https://precisionneuro.stanford.edu/research">research programme</a>, not a claim about an internal bottleneck.</p>
+      <p>A useful follow-up would repeat selected readouts in a separately acquired session, with verified pulse timing and coil/target metadata. Improved within-session agreement but poor between-session agreement would motivate checking session and positioning effects. Good agreement in both would still require sham or sensory controls before attributing the response to direct neural stimulation.</p>
+
+      <h2>What I would bring</h2>
+      <p>My research experience connects computational neuroscience models and biological data analysis with practical laboratory work. I would like to help turn scientific questions into inspectable analyses, document assumptions clearly, and work with researchers to test what a result can actually support. This project provides a small, AI-assisted example of that approach, not a claim that I have already operated TMS equipment or built production electrophysiology infrastructure.</p>
+
+      <h2>Methods note</h2>
+      <p class="methods-note">This is a reanalysis of published processed data, not an independent validation of the source paper or a reproduction of its group task-related component analysis (gTRCA). C3, Cz and Pz; 20–60 ms and 80–180 ms; budgets of 10, 20, 30, 40 and 50 trials per set; and 100 seeded splits were fixed before inspecting results. Trials do not overlap within a comparison; they recur across resampling iterations. Participants, not trials or resamples, are the independent cohort units.</p>
+      <details class="method-details">
+        <summary>Measurements, missing metadata and reuse</summary>
+        <p>Shape agreement is Pearson's correlation within the selected window. Amplitude discrepancy is 200 × |RMS<sub>A</sub> − RMS<sub>B</sub>| / (RMS<sub>A</sub> + RMS<sub>B</sub>), in percent. Zero-variance correlations and zero-denominator amplitude comparisons remain missing. The 10th–90th percentiles describe the seeded resampling distribution; they are not inferential confidence intervals. Correlation ignores scale, so both measurements are needed.</p>
+        <p>The source authors performed artifact processing, filtering, baseline correction and interpolation. This workflow does not repeat raw-signal cleaning. Neither window is guaranteed to isolate a neural component; stable sensory or muscle contamination can also be repeatable. The deposit does not provide sham labels, acquisition timestamps, behavioral state or tracked coil poses. Its ordinal event values must not be interpreted as real pulse timing.</p>
+        <p>The accompanying Python workflow checks file identity, channels, units, dimensions and trial coverage, and exports the same derived schema for reuse. A bounded adapter exercises the unmodified NumPy serialization helpers from <a href="https://github.com/PrecisionNeuroLab/NaviNIBS/tree/094f86d9204204f4a5ec125d4ab3fa995047845e">NaviNIBS, pinned at 094f86d</a>. Missing acquisition timestamps prevent creating an authentic navigation sample; the adapter reports that limitation instead of inventing a session. No neuronavigation, GUI or hardware control is performed.</p>
+        <p>Reuse would require an authorized epochs dataset, verified preprocessing history and event timing, appropriate stimulation/control labels, and independent testing with the intended acquisition system.</p>
+      </details>
+      <p class="methods-note source-links"><a href="https://zenodo.org/records/15814468">Dataset &amp; license</a> · <a href="https://doi.org/10.1162/IMAG.a.1085">Source paper</a> · <a href="https://github.com/liuzhitong330/solomon-keller-tms-demo">Code, tests &amp; reproduction guide</a> · <a href="analysis.json">Derived data</a></p>
+      <noscript><p>This explorer requires JavaScript. The <a href="analysis.json">derived results</a> and <a href="https://github.com/liuzhitong330/solomon-keller-tms-demo">reproduction guide</a> remain available without it.</p></noscript>
+    </section>
+
+    <footer>
+      Cathy Liu · <a href="mailto:cathyliu014@gmail.com">cathyliu014@gmail.com</a> · <a href="tel:+14152163799">415-216-3799</a><br>
+      Personal exploratory analysis · External public data · Not a clinical tool
+    </footer>
+  </main>
+
+  <script src="data.js?v=20261109"></script>
+  <script src="app.js?v=20261109"></script>
+</body>
+</html>
